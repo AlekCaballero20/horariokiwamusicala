@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Actividades Kiwa - Musicala 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con Logo -->
+    <div class="header">
+        <img src="https://static.wixstatic.com/media/85afce_3adb3865c88a492b93a8bf2dc69049c3~mv2.png" alt="Logo Musicala" class="logo">
+        Horario de Actividades Kiwa - Musicala 2025
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <label for="docentes"><strong>Selecciona un horario:</strong></label>
+        <select id="docentes" onchange="cargarDatos()"></select>
+
+        <div class="table-container">
+            <table id="tabla-horario">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <p class="copyright">© 2025 Musicala. Todos los derechos de uso son propiedad de Musicala.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>

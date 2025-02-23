@@ -1,0 +1,152 @@
+/* General */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.header {
+    background: #1E88E5;
+    color: white;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#docentes {
+    font-size: 16px;
+    padding: 8px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    width: 50%;
+    max-width: 300px;
+}
+
+/* Tabla de horarios */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #1565C0;
+    color: white;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-width: 80px;
+    white-space: pre-wrap;
+    font-size: 14px;
+}
+
+/* Colores alternos y hover */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e3f2fd;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Footer */
+.copyright {
+    font-size: 14px;
+    color: #555555;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #docentes {
+        width: 80%;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .logo {
+        max-width: 60px;
+    }
+}
+
+/* Efecto fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.table-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hover en celdas con contenido */
+td:not(:empty):hover {
+    background-color: #FFEB3B;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Botón interactivo */
+#docentes {
+    transition: all 0.3s ease;
+}
+
+#docentes:hover {
+    border-color: #1565C0;
+    box-shadow: 0 0 5px rgba(21, 101, 192, 0.5);
+}
+
+/* Títulos decorativos */
+.header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+}
