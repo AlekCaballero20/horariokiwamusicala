@@ -150,3 +150,18 @@ td:not(:empty):hover {
     font-family: 'Dancing Script', cursive;
     font-size: 36px;
 }
+
+
+/* Estilos para actividades específicas */
+td {
+    font-weight: bold;
+}
+
+/* Colores según actividad */
+td:contains("Danzas A") { background-color: #FFCDD2; } /* Rojo claro */
+td:contains("Danzas B") { background-color: #F8BBD0; } /* Rosa */
+td:contains("Teatro A") { background-color: #C8E6C9; } /* Verde claro */
+td:contains("Teatro B") { background-color: #A5D6A7; } /* Verde */
+td:contains("Dibujo A") { background-color: #BBDEFB; } /* Azul claro */
+td:contains("Dibujo B") { background-color: #90CAF9; } /* Azul */
+
