@@ -158,10 +158,6 @@ td {
 }
 
 /* Colores según actividad */
-td:contains("Danzas A") { background-color: #FFCDD2; } /* Rojo claro */
-td:contains("Danzas B") { background-color: #F8BBD0; } /* Rosa */
-td:contains("Teatro A") { background-color: #C8E6C9; } /* Verde claro */
-td:contains("Teatro B") { background-color: #A5D6A7; } /* Verde */
-td:contains("Dibujo A") { background-color: #BBDEFB; } /* Azul claro */
-td:contains("Dibujo B") { background-color: #90CAF9; } /* Azul */
-
+td:contains("Danzas") { background-color: #FFCDD2; } /* Rojo claro */
+td:contains("Teatro") { background-color: #C8E6C9; } /* Verde claro */
+td:contains("Dibujo") { background-color: #BBDEFB; } /* Azul claro */
