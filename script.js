@@ -87,6 +87,9 @@ function llenarTabla(datos) {
     });
 
     tabla.appendChild(tbody);
+    
+    // 🔥 Aplicar colores después de llenar la tabla
+    aplicarColores();
 }
 
 // Iniciar
