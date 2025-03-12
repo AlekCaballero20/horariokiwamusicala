@@ -156,20 +156,3 @@ td:not(:empty):hover {
 td {
     font-weight: bold;
 }
-
-function aplicarColores() {
-    let celdas = document.querySelectorAll("#tabla-horario td"); // Seleccionar todas las celdas de la tabla
-
-    celdas.forEach(celda => {
-        let texto = celda.textContent.trim().toLowerCase(); // Convertir el texto a minúsculas
-
-        if (texto.includes("danzas")) {
-            celda.style.backgroundColor = "#FFCDD2"; // Rojo claro
-        } else if (texto.includes("teatro")) {
-            celda.style.backgroundColor = "#C8E6C9"; // Verde claro
-        } else if (texto.includes("dibujo")) {
-            celda.style.backgroundColor = "#BBDEFB"; // Azul claro
-        }
-    });
-}
-
