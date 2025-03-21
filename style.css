@@ -51,10 +51,12 @@ body {
 /* Tabla de horarios */
 .table-container {
     width: 100%;
-    overflow-x: auto;
+    max-height: 80vh; /* Ajusta la altura máxima */
+    overflow: auto; /* Permite scroll horizontal y vertical */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    position: relative; /* 🔥 Asegura que position: sticky funcione */
 }
 
 table {
@@ -154,4 +156,19 @@ td:not(:empty):hover {
 /* Estilos para actividades específicas */
 td {
     font-weight: bold;
+}
+
+table {
+    width: max-content; /* Evita que la tabla se encoja */
+    min-width: 100%; /* Mantiene el ancho */
+    border-collapse: collapse;
+}
+
+.table-container::-webkit-scrollbar {
+    height: 8px; /* Asegura que el scroll horizontal sea visible */
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
 }
